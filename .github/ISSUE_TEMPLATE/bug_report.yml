@@ -1,0 +1,58 @@
+name: Bug report
+description: Report a reproducible NetSim defect.
+title: "bug: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please provide a minimal reproduction. Do not include real credentials or private network data.
+  - type: input
+    id: version
+    attributes:
+      label: NetSim version or commit
+      placeholder: 0.1.2 or commit SHA
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system and Python version.
+      placeholder: Ubuntu 24.04, Python 3.13
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the exact commands or GUI actions.
+      placeholder: |
+        1. Start NetSim.
+        2. Configure the lab.
+        3. Run the command that triggers the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Include the relevant error message or sanitized traceback.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I have checked for an existing report.
+          required: true
+        - label: This report contains no credentials or private network data.
+          required: true

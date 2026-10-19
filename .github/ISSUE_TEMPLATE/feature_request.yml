@@ -1,0 +1,35 @@
+name: Feature request
+description: Propose a focused improvement to NetSim.
+title: "feature: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What user or learning need does this address?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the desired behavior and an example workflow.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and trade-offs
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Design checklist
+      options:
+        - label: The feature fits the simulator's documented scope.
+          required: true
+        - label: The behavior can be tested locally without attacking external systems.
+          required: true

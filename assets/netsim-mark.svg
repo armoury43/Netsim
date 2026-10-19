@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">NetSim network mark</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1220"/><stop offset="1" stop-color="#17263b"/></linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2dd4bf"/><stop offset="1" stop-color="#38bdf8"/></linearGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="30" fill="url(#bg)"/>
+  <path d="M28 39L64 64L100 39M64 64L64 99M28 39L28 85L64 99L100 85L100 39" fill="none" stroke="url(#line)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="17" y="27" width="22" height="22" rx="6" fill="#123347" stroke="#38bdf8" stroke-width="2.5"/>
+  <rect x="53" y="53" width="22" height="22" rx="6" fill="#123a36" stroke="#2dd4bf" stroke-width="2.5"/>
+  <rect x="89" y="27" width="22" height="22" rx="6" fill="#282451" stroke="#a78bfa" stroke-width="2.5"/>
+  <circle cx="28" cy="85" r="5" fill="#38bdf8"/><circle cx="64" cy="99" r="5" fill="#2dd4bf"/><circle cx="100" cy="85" r="5" fill="#a78bfa"/>
+</svg>
